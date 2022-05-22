@@ -1,0 +1,57 @@
+main: me.cats.Filter.bukkit.Filter
+name: Filter
+prefix: Filter
+version: 4.3.5
+author: Cats
+description: This plugin Filters your chat and can block dns, url links, ip addresses, badwords, spam, capslock.
+
+commands:
+  censor:
+    description: "This command show plugin commands !"
+permissions:
+  censor.*:
+    default: false
+    children:
+      censor.update: true
+      censor.warning: true
+      censor.command.chatclear: true
+      censor.command.reload: true
+      censor.command.setlang: true
+      censor.command.tab.action: true
+      censor.bypass.*: true
+  censor.bypass.*:
+    default: op
+    children:
+      censor.bypass.chatclear: true
+      censor.bypass.adw: true
+      censor.bypass.repated.messages: true
+      censor.bypass.badwords: true
+      censor.bypass.capslock: true
+      censor.bypass.ip: true
+      censor.bypass.pmCheck: true
+  censor.bypass.chatclear:
+    default: op
+  censor.bypass.adw:
+    default: op
+  censor.bypass.repeated.messages:
+    default: op
+  censor.bypass.badwords:
+    default: op
+  censor.bypass.capslock:
+    default: op
+  censor.bypass.ip:
+    default: op
+  censor.bypass.pmCheck:
+    default: op
+  censor.update:
+    default: op
+  censor.warning:
+    default: op
+  censor.command.chatclear:
+    default: op
+  censor.command.reload:
+    default: op
+  censor.command.setlang:
+    default: op
+  censor.command.tab.action:
+    default: op

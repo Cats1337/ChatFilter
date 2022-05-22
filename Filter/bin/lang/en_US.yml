@@ -1,0 +1,23 @@
+replace: "*****"
+chatclear_notifier: "&aChat has been cleared by [player]"
+capslock_notifier: "Woah.. clam down, no need to shout..."
+repeated_messages_notifier: "Please don't repeat yourself, yourself!"
+adw_notifier: "Sorry sending links is blocked."
+ip_notifier: "Sorry, sending ip addresses is blocked!"
+plugin_reloaded: "Plugin was successfully loaded!"
+no_permissions: "You dont have the required permisisons!"
+warning_to_team: "&e⚠&8(&4Filter&8)&e⚠ &cWARNING &7Player: &e[player] &7said: &c[word]&7!"
+
+commands:
+  command_setlang_success: "&aLanguage configuration was set on [lang] !"
+  command_setlang_usage_error: "&cError /censor setlang <lang>"
+  command_setlang_lang_error: "&cThe language [lang] doesn't exist !"
+  argument-zero:
+    - "&a=========== [&4Filter&a
+] ==========="
+    - "&eAll available commands !"
+    - "&6/censor chatclear - Clears chat!"
+    - "&6/censor reload - Reloads configs"
+    - "&6/censor setlang <lang> - sets language !"
+    - "&a=========== [&4Filter&a
+] ==========="

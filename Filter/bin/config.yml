@@ -1,0 +1,33 @@
+Filter:
+  setup:
+    prefix: "&e⚠&8(&4Filter&8)&e⚠ &7> &e"
+    lang: "en_US"
+    bstats: true
+    replace_caps_message_to_lower_case: true
+  node_check_cmd: [/msg, /pm, /tell, /r, /w]
+  node_website_whitelist:
+    - www.example.com
+    - https://www.example.com
+    - http://www.exmaple.com
+  node_module:
+    checkPrivateCommands: true
+    checkRepeatedMessages: true
+    checkSwear: true
+    checkIPAddress: true
+    checkWebSites: true
+  click_actions:
+    show_component: "&4&lPUNISH &7=> &e[command]"
+    swear:
+      punish: "/mute [player] 5m Watch your language!"
+    ip_address:
+      punish: "/ban [player] 3d This server does not allowing sending ip address!"
+    websites:
+      punish: "/ban [player] 3d This server does not allowing sending websites!"
+  Filters:
+    message_percentage_similarity: 80
+    caps_sensitive: 16
+    websites_rgx:
+      - (http\:\/\/|https\:\/\/)?([a-z0-9\-\s\.\W\s\S\_]*\.)+[a-z0-9\s][a-z0-9\-\s\.]*
+      - ^(.* + \W|\d|_|.*|)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)+( .*)?$
+      - ([a-z\_\S]*[\#\.\$\@\!|,|\_|\€]+(\w{2,4}))
+    ip_address_rgx: '\d{1,3}[.|#|,]?\d{1,3}?[.|#|,]\d{1,3}[.|#|,]\d{1,3}|[:]\d{1,5}'
