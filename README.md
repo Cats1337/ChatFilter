@@ -3,7 +3,7 @@ Simple Chat Filter plugin for minecraft
 
 This plugin is a simple Chat Filter Plugin.
 
-This plugin was originally made for a YouTube video that I never finished, or rather got didn't get the desired outcome of.
+This plugin was originally made for a YouTube video that I never finished, or rather I didn't get the desired outcome.
 
 _The exploited code is removed from the code, it was on line 57 in ListenClass_
 
